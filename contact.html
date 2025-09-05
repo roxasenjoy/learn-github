@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaCom — Contact (Brouillon)</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Brouillon de la page contact avec formulaire non-fonctionnel.">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navigation principale">
+      <img src="assets/images/logo.svg" alt="Logo NovaCom" class="logo" />
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact <small class="badge">Brouillon</small></h1>
+    <p>Écrivez-nous à <a href="mailto:contact@novacom.example">contact@novacom.example</a> ou utilisez le formulaire ci-dessous (non-fonctionnel).</p>
+
+    <!-- TODO: Améliorer les labels, l'ordre de tabulation et messages d'aide -->
+    <form aria-label="Formulaire de contact (prototype)">
+      <label for="name">Nom</label>
+      <input id="name" name="name" type="text" placeholder="Votre nom" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="vous@exemple.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+
+      <button type="button" title="Désactivé pour l'exercice" aria-disabled="true">Envoyer (prototype)</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© NovaCom — Exercice pédagogique.</div>
+  </footer>
+</body>
+</html>
