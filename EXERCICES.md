@@ -255,19 +255,6 @@ Créez un **nouveau dépôt d’équipe** (ou une organisation) afin de repartir
 - [ ] PR synchronisée avec la branche principale avant validation
 
 ---
-
-## Livrables & évaluation (suggestion)
-- **Pour chaque élève (solo)** : lien du dépôt, historique lisible, `README.md`, `journal-apprentissage.md`, jalon **v0.1.0**.  
-- **Pour chaque équipe (groupe de 3)** : lien du dépôt, **board** actif, issues/PR documentées, règles d’équipe, release **v1.0.0**, patch **v1.0.1**, mini-vérification automatique sur PR.  
-
-**Barème indicatif (sur 20)**  
-- Cycle local & hygiène des enregistrements : **/5**  
-- Remote (récupération, publication), branches & PR : **/6**  
-- Conflits, mise à jour avant fusion, jalons : **/5**  
-- Collaboration (issues, reviews, board, règles, CI simple) : **/4**
-
----
-
 ## Conseils
 - Documentez vos **décisions** (journal) : “pourquoi” > “comment”.  
 - **Petites PR** → retours rapides → meilleure qualité.  
