@@ -1,0 +1,20 @@
+/* styles minimaux */
+:root{
+  --bg:#fff; --fg:#111; --muted:#666; --primary:#0ea5a6; --maxw:940px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif}
+a{color:var(--primary);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:var(--maxw);margin:0 auto;padding:20px}
+.site-header{border-bottom:1px solid #eee;background:#fafafa}
+.nav{display:flex;align-items:center;gap:16px}
+.logo{height:28px}
+.hero{padding:56px 0}
+.lead{color:var(--muted)}
+.site-footer{border-top:1px solid #eee;margin-top:40px;color:var(--muted);font-size:14px}
+.badge{font-size:12px;color:#fff;background:#999;padding:2px 6px;border-radius:6px}
+.todo{color:var(--muted)}
+form{display:grid;gap:12px;max-width:640px}
+input,textarea{padding:10px 12px;border:1px solid #ddd;border-radius:8px;font-size:16px}
+button{background:var(--primary);color:#fff;border:0;border-radius:8px;padding:10px 16px;font-weight:700;cursor:pointer}
+button[aria-disabled="true"]{opacity:.7;cursor:not-allowed}
