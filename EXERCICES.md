@@ -1,7 +1,7 @@
 # EXERCICES — Projet fil rouge *NovaCom*
 > **Objectif global** : se familiariser avec Git & GitHub à travers la réalisation d’un **site vitrine statique** pour le client fictif **NovaCom**.  
-> **Deux temps** : 1) série d’exercices **solo** (12) ; 2) série d’exercices **en équipe de 3** (12).  
-> **Important** : ce document **ne donne volontairement aucune commande**. Vous devez choisir et appliquer les bonnes actions Git/GitHub (locales et distantes) en fonction des consignes.
+> **Deux temps** : 1) série d’exercices **solo** (12) ; 2) série d’exercices **en équipe de 2** (8).  
+> **IMPORTANT — FORK FIRST :** vous **travaillez toujours sur votre fork** (copie personnelle du dépôt modèle), **cloné en local**. Vous ne modifiez jamais le dépôt modèle d’origine. Toutes vos modifications partent de **votre dépôt local** → *push* → **votre fork GitHub** → *PR* si nécessaire.
 
 ---
 
@@ -14,237 +14,146 @@
 
 ---
 
-# PHASE 1 — Exercices **SOLO** (12)
-Vous travaillez **seul** sur votre copie du projet (créée à partir du dépôt modèle).
+# 🟩 SOLO — Bases de Git (découverte locale)
+⚠️ Toutes les modifications doivent être faites sur votre fork (copie personnelle du dépôt modèle), cloné en local.
 
-### S01 — Récupération & installation personnelle
-**But :** démarrer sur de bonnes bases.  
-**Consignes :**
-1. Dupliquer le dépôt modèle (**template** ou **fork**) vers **votre compte** github.  
-2. **Récupérer** le projet en local.  
-3. Ajouter dans `README.md` une courte présentation personnelle (prénom, objectif du site).  
-4. Préparer `journal-apprentissage.md` et noter ce que vous avez fait/observé.
-**Critères de validation :** le dépôt distant est créé sous votre compte, le projet s’ouvre localement, `README.md` + `journal-apprentissage.md` existent.
+### S01 — Initialiser & préparer son dépôt
+- Forker le dépôt modèle sur votre compte GitHub.  
+- Cloner votre fork en local.  
+- Ajouter prénom et objectif du site dans `README.md`.  
+- Créer `journal-apprentissage.md`.  
+✅ Résultat : dépôt local fonctionnel, fichiers modifiés visibles sur votre fork GitHub après push.
 
-### S02 — Première amélioration du site
-**But :** cycle local → distant (enregistrer / publier).  
-**Consignes :**
-1. Ajouter un **en-tête** (logo fictif + navigation) sur `index.html`.  
-2. Styliser l’en-tête dans `assets/styles.css`.  
-3. **Enregistrer** localement des changements cohérents (granularité).  
-4. **Publier** sur le dépôt distant.  
-**Validation :** en ligne, l’en-tête est visible ; l’historique est propre (1–2 unités de travail cohérentes).
+### S02 — Premier commit structuré
+- Ajouter un header basique dans `index.html`.  
+- Commit clair : *Ajoute en-tête à la page d’accueil*.  
+- Push sur votre fork GitHub.  
+✅ Résultat : en ligne, l’en-tête apparaît sur votre repo.
 
-### S03 — Issue → Branche → PR (en solo)
-**But :** isoler une fonctionnalité et la proposer via PR.  
-**Consignes :**
-1. Créer une **issue** “Créer la page Services (v1)”.  
-2. Ouvrir une **branche dédiée** liée à cette issue.  
-3. Compléter `services.html` avec **3 services** (texte + icône/illustration).  
-4. Ouvrir une **PR** vers la branche principale : titre, description, captures (si utile), check-list.  
-5. **Fusionner** la PR.  
-**Validation :** PR visible, fusion propre, issue liée (fermée automatiquement si possible).
-
-### S04 — Mise à jour depuis le distant (synchro)
-**But :** intégrer des changements distants proprement.  
-**Consignes :**
-1. Modifier `README.md` **depuis l’interface GitHub** (simulateur de mise à jour distante).  
-2. **Récupérer** ces changements sur votre poste.  
-3. **Rejouer** vos modifications locales au-dessus de l’état distant si nécessaire (historique **linéaire** attendu).  
-**Validation :** pas de “merge inhabituel” ; notez la stratégie retenue dans `journal-apprentissage.md`.
-
-### S05 — Page Contact & sélection des changements
-**But :** staging sélectif, commits bien ciselés.  
-**Consignes :**
-1. Créer/compléter `contact.html` (formulaire non-fonctionnel : nom, email, message).  
-2. Structurer en **unités de travail** : structure HTML d’un côté, styles de l’autre.  
-3. **Enregistrer** en deux étapes distinctes.  
-**Validation :** au moins deux unités cohérentes ; messages explicites.
-
-### S06 — Annulation propre (réparation)
-**But :** corriger sans casser l’historique.  
-**Consignes :**
-1. Introduire volontairement un **style problématique** (ex. contraste illisible).  
-2. Valider ce changement, constater le problème.  
-3. **Annuler** en créant un enregistrement dédié d’annulation.  
-4. Justifier dans `journal-apprentissage.md` pourquoi cette approche est préférable en équipe.  
-**Validation :** site redevenu lisible ; historique montrant l’aller-retour contrôlé.
-
-### S07 — Lecture de l’historique
-**But :** retracer qui a fait quoi/quand.  
-**Consignes :**
-1. Trouver **l’enregistrement** qui a modifié pour la dernière fois le **slogan** sur la page d’accueil.  
-2. En noter l’identifiant abrégé, l’auteur, la date et le “pourquoi” dans `journal-apprentissage.md`.  
-**Validation :** entrée claire dans le journal, vérifiable.
-
-### S08 — Marquer une version (v0.1.0)
-**But :** jalonner le projet.  
-**Consignes :**
-1. Définir le périmètre **v0.1.0** (Accueil + Services v1 + Contact v1).  
-2. **Marquer** la version et **publier** ce jalon.  
-3. Ajouter un **changelog** succinct dans le `README.md`.  
-**Validation :** jalon visible en ligne (onglet “Releases” ou équivalent).
-
-### S09 — Nettoyage de l’historique (squash)
-**But :** regrouper des WIP trop fragmentés.  
-**Consignes :**
-1. Sur une branche de refonte du **pied de page**, avancer par petits pas (plusieurs enregistrements).  
-2. **Regrouper** ces pas en une **unité finale** claire avant intégration.  
-3. Intégrer proprement dans la branche principale.  
-**Validation :** historique final lisible (un seul enregistrement fonctionnel pour le pied de page).
-
-### S10 — Performances & assets
-**But :** penser au poids et à l’accessibilité.  
-**Consignes :**
-1. Ajouter/optimiser quelques **images** (poids raisonnable).  
-2. Vérifier la présence d’**attributs alternatifs** pertinents.  
-3. Structurer `assets/` proprement (images, styles).  
-**Validation :** assets optimisés ; structure claire ; notez vos choix dans le journal.
-
-### S11 — Documentation du dépôt
-**But :** clarifier les règles de contribution.  
-**Consignes :**
-1. Créer `CONTRIBUTING.md` (messages, branches, PR, revue).  
-2. Ajouter un **modèle d’issue** simple (bug/feature).  
-3. Ajouter un **modèle de PR** (contexte, check-list, captures).  
-**Validation :** fichiers en place ; PR/Issues utilisent les modèles.
-
-### S12 — Publication statique (option si autorisé)
-**But :** mettre en ligne facilement.  
-**Consignes :**
-1. Activer la **publication statique** du site (branche principale ou dossier dédié).  
-2. Vérifier l’**URL publique** du site.  
-**Validation :** site accessible ; l’URL est notée dans le `README.md`.
+### S03 — Cycle complet (modif → stage → commit → push)
+- Modifier `styles.css` pour styliser le header.  
+- Vérifier l’état avec `git status`.  
+- Ajouter sélectivement au staging.  
+✅ Résultat : commit clair, visible sur votre fork.
 
 ---
 
-# PHASE 2 — Exercices **ÉQUIPE DE 3** (12)
-Créez un **nouveau dépôt d’équipe** (ou une organisation) afin de repartir sur un contexte propre **en groupe**. Rôles tournants conseillés :  
-- **A** = lead dev (veille à l’historique & releases)  
-- **B** = intégration UI/UX  
-- **C** = contenu & accessibilité
+# 🟧 SOLO — Git pratique (features & historique)
 
-### G01 — Kickoff d’équipe
-**But :** poser le cadre commun.  
-**Consignes :**
-1. Créer le dépôt d’équipe ; inviter A, B, C.  
-2. Écrire `CONTRIBUTING.md` (messages, nommage branches, PR, revue, “mettre à jour avant fusion”).  
-3. **Protéger** la branche principale (revue obligatoire, pas de force push).  
-**Validation :** règles publiées ; protections actives.
+### S04 — Issue + branche + PR
+- Sur votre fork, créer une issue : *Page Services v1*.  
+- Nouvelle branche `feat/services`.  
+- Ajouter 3 services dans `services.html`.  
+- Ouvrir une PR dans votre fork → fusionner.  
+✅ Résultat : issue fermée automatiquement, PR visible dans votre fork.
 
-### G02 — Planification (Issues + Board)
-**But :** organiser la charge.  
-**Consignes :**
-1. Créer des **issues** : hero Accueil, Services v2 (cartes), Témoignages, Accessibilité, Performance, Favicon, Contact v2.  
-2. Mettre en place un **project board** (To do / In progress / Review / Done).  
-3. **Assigner** les issues (A, B, C).  
-**Validation :** board actif, issues priorisées et assignées.
+### S05 — Synchro distante (pull / fetch)
+- Modifier `README.md` directement via l’interface GitHub (sur votre fork).  
+- Récupérer en local (`git pull`).  
+- Noter la stratégie choisie dans le journal.  
+✅ Résultat : synchro propre, pas de conflit.
 
-### G03 — Branches de fonctionnalité & PR
-**But :** standardiser le flux.  
-**Consignes :**
-1. Chaque membre crée une **branche** pour son issue (`feat/...`).  
-2. Réaliser la fonctionnalité ; ouvrir une **PR** descriptive (contexte, captures, check-list).  
-**Validation :** 3 PR ouvertes, liées à leurs issues.
+### S06 — Commits sélectifs
+- Compléter `contact.html` avec formulaire (nom, email, message).  
+- Commit 1 : HTML structure.  
+- Commit 2 : CSS styles.  
+✅ Résultat : 2 commits séparés, visibles dans l’historique de votre fork.
+
+---
+
+# 🟥 SOLO — Approfondissement Git
+
+### S07 — Explorer l’historique
+- Retrouver le commit qui a modifié le slogan d’accueil.  
+- Noter auteur, date, hash dans `journal-apprentissage.md`.  
+✅ Résultat : info vérifiable.
+
+### S08 — Créer un jalon (tag)
+- Définir périmètre `v0.1.0` (Accueil + Services + Contact).  
+- Tag `v0.1.0` + push sur votre fork.  
+- Ajouter changelog dans `README.md`.  
+✅ Résultat : release visible dans l’onglet “Releases” de votre repo GitHub.
+
+### S09 — Corriger proprement
+- Introduire un bug visuel (mauvaise couleur).  
+- Commit = *Ajoute style illisible*.  
+- Corriger avec un commit de revert.  
+✅ Résultat : historique montre erreur + correction.
+
+---
+
+# ⬛ SOLO — Consolidation
+
+### S10 — Documentation de contribution
+- Créer `CONTRIBUTING.md` avec règles (commits, branches, PR).  
+✅ Résultat : fichier présent dans votre fork.
+
+### S11 — Organisation des assets
+- Ajouter 1–2 images dans `assets/images/`.  
+- Vérifier poids raisonnable + alt.  
+✅ Résultat : repo mieux structuré.
+
+### S12 — Publication GitHub Pages
+- Activer GitHub Pages sur votre fork.  
+- Vérifier que l’URL publique fonctionne.  
+✅ Résultat : site en ligne, URL notée dans `README.md`.
+
+---
+
+# 🟩 ÉQUIPE DE 2 — Premiers pas collaboratifs
+⚠️ L’équipe crée un dépôt partagé (nouveau repo d’équipe ou organisation).  
+Chaque membre clone le dépôt équipe en local, et ne travaille jamais directement sur le repo de l’autre.
+
+### G01 — Dépôt commun
+- Créer dépôt d’équipe.  
+- Inviter le binôme.  
+- Ajouter `CONTRIBUTING.md`.  
+✅ Résultat : règles visibles sur repo équipe.
+
+### G02 — Issues & Kanban
+- Créer 3 issues (Accueil, Services, Contact).  
+- Créer un project board simple (To Do / In progress / Done).  
+✅ Résultat : board actif, issues assignées.
+
+---
+
+# 🟧 ÉQUIPE DE 2 — Collaboration active
+
+### G03 — Branches de fonctionnalité
+- Chaque étudiant crée une branche `feat/...` à partir du dépôt équipe.  
+- Dev → ouvrir PR.  
+✅ Résultat : 2 PR ouvertes sur le dépôt équipe.
 
 ### G04 — Reviews croisées
-**But :** qualité collective.  
-**Consignes :**
-1. Chaque PR reçoit au moins **une review** d’un pair.  
-2. Les suggestions sont **appliquées** via de nouveaux enregistrements.  
-**Validation :** discussions visibles ; amélioration suite aux retours.
-
-### G05 — Mise à jour avant fusion
-**But :** historique propre et à jour.  
-**Consignes :**
-1. **Actualiser** sa branche par rapport à la branche principale **avant** de fusionner.  
-2. Choisir un mode d’intégration privilégiant la **lisibilité** (ex. regrouper).  
-**Validation :** historique linéaire ; messages clairs.
-
-### G06 — Conflit maîtrisé
-**But :** s’entraîner à résoudre un conflit.  
-**Consignes :**
-1. Provoquer un **conflit** sur une même ligne (ex. slogan Accueil modifié sur deux branches).  
-2. **Résoudre** localement ; **documenter** le choix retenu dans la PR.  
-**Validation :** PR fusionnée ; commentaire expliquant la résolution.
-
-### G07 — Accessibilité
-**But :** améliorer l’UX pour tous.  
-**Consignes :**
-1. Ajuster **contrastes** et **taille de police**.  
-2. Ajouter des **libellés explicites** aux champs de formulaire, ordre de **tabulation** logique, focus visible.  
-**Validation :** checklist d’accessibilité renseignée dans la PR.
-
-### G08 — Performance & assets
-**But :** livrer plus léger.  
-**Consignes :**
-1. Réduire le **poids** des images (format/qualité adaptés).  
-2. Simplifier/organiser les **styles** ; supprimer le code mort.  
-**Validation :** mesures avant/après notées dans la PR (poids total `assets/`).
-
-### G09 — Release 1.0.0
-**But :** figer et livrer.  
-**Consignes :**
-1. Créer une **branche de release**, corriger les détails.  
-2. Rédiger des **notes de version** (nouvelles sections, corrections).  
-3. **Publier** la **v1.0.0** (jalon/tag).  
-**Validation :** release visible ; notes de version claires.
-
-### G10 — Hotfix 1.0.1
-**But :** corriger rapidement après release.  
-**Consignes :**
-1. Identifier un **bug mineur** (ex. lien cassé).  
-2. Créer une **branche hotfix**, corriger, ouvrir une PR, fusionner après review.  
-3. **Publier** un correctif **1.0.1**.  
-**Validation :** tag patch publié ; notes de version mises à jour.
-
-### G11 — Contribution via fork
-**But :** simuler un contributeur externe.  
-**Consignes :**
-1. Un membre **forke** le dépôt d’équipe.  
-2. Dans son fork, préparer une petite amélioration (ex. favicon, meta description).  
-3. Ouvrir une **PR depuis le fork** vers le dépôt principal ; suivre `CONTRIBUTING`.  
-**Validation :** PR depuis fork acceptée et fusionnée.
-
-### G12 — Qualité continue & rétrospective
-**But :** automatiser et capitaliser.  
-**Consignes :**
-1. Mettre en place une **vérification automatique** simple sur les PR (ex. présence des pages clés, linter HTML/CSS, ou script de contrôle minimal).  
-2. Organiser une **rétrospective** : ce qui a bien/mal fonctionné, 3 actions d’amélioration, mise à jour de `CONTRIBUTING.md`.  
-**Validation :** la vérification empêche la fusion si elle échoue ; `CONTRIBUTING.md` mis à jour.
+- Chaque étudiant review la PR de l’autre.  
+- Proposer au moins 1 amélioration et l’appliquer.  
+✅ Résultat : PR améliorées puis fusionnées.
 
 ---
 
-## Modèles utiles (à copier dans votre dépôt)
+# 🟥 ÉQUIPE DE 2 — Conflits & synchro
 
-### Modèle de Pull Request (exemple)
-- **Contexte / objectif :** …  
-- **Changements principaux :** …  
-- **Checklist :**  
-  - [ ] Tests manuels réalisés (navigation, liens, responsive)  
-  - [ ] Captures d’écran ajoutées si pertinent  
-  - [ ] Documentation mise à jour (README/Contrib)  
-  - [ ] Branches synchronisées avec la branche principale
+### G05 — Mise à jour avant merge
+- Rebaser sa branche sur `main` avant de fusionner.  
+✅ Résultat : historique propre.
 
-### Modèle d’Issue (exemple)
-- **Type :** Bug / Amélioration / Nouvelle fonctionnalité  
-- **Description :** …  
-- **Étapes / Critères d’acceptation :** …  
-- **Impacts potentiels :** …  
-- **Ressources / Liens :** …
-
-### Check-list de revue (exemple)
-- [ ] Le but de la PR est clair et limité  
-- [ ] Les changements sont cohérents et compréhensibles  
-- [ ] Nommage des fichiers et sections explicite  
-- [ ] Accessibilité minimale respectée (titres, alt, labels)  
-- [ ] Pas de régression visible sur les pages existantes  
-- [ ] PR synchronisée avec la branche principale avant validation
+### G06 — Conflit simulé
+- Modifier la même ligne dans `index.html` sur 2 branches.  
+- Résoudre en local et documenter la décision dans la PR.  
+✅ Résultat : PR fusionnée avec explication.
 
 ---
-## Conseils
-- Documentez vos **décisions** (journal) : “pourquoi” > “comment”.  
-- **Petites PR** → retours rapides → meilleure qualité.  
-- Privilégiez un historique **lisible** : regroupez les WIP avant d’intégrer.  
-- Évitez d’embarquer des **fichiers lourds** ou secrets dans le dépôt.  
-- Réutilisez vos **modèles** (issue/PR) et mettez-les à jour au fil des retours.
+
+# ⬛ ÉQUIPE DE 2 — Projets réels
+
+### G07 — Release 1.0.0
+- Créer une branche release.  
+- Corriger détails.  
+- Tag `v1.0.0` + notes de version.  
+✅ Résultat : release visible sur repo équipe.
+
+### G08 — Hotfix 1.0.1
+- Simuler bug (ex. lien cassé).  
+- Corriger via branche `hotfix/...`.  
+- Tag `v1.0.1`.  
+✅ Résultat : patch publié avec changelog.
