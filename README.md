@@ -13,6 +13,6 @@ Ce dépôt sert de **point de départ** pour les exercices. Il contient un **sit
 ## Utilisation
 1. Récupérez ce dépôt sur votre machine.
 2. Ouvrez `index.html` dans votre navigateur (ou servez en local).
-3. Suivez les exercices (solo puis équipe) : créez des branches, améliorez les pages, ouvrez des PR, etc.
+3. Suivez les exercices qui se trouvent dans EXERCICES.md (solo puis équipe) : créez des branches, améliorez les pages, ouvrez des PR, etc.
 
 > Astuce : consignez vos décisions dans un fichier `journal-apprentissage.md` (à créer).

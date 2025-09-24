@@ -5,19 +5,6 @@
 
 ---
 
-## Matériel fourni (à préparer par l’enseignant)
-- Un **dépôt modèle** GitHub servant de point de départ : **<INSÉRER_LIEN_DU_DÉPÔT_MODÈLE>**  
-  *(Ex. “Use this template” ou “Fork” activé)*
-- Contenu minimal du modèle :  
-  - `index.html`, `services.html` (brouillon), `contact.html` (brouillon)  
-  - `assets/` (images, `styles.css` minimal)  
-  - `README.md` (présentation du projet)  
-  - `.gitignore` (basique adapté au projet)
-
-> **Rappel** : le travail consiste à **récupérer** ce dépôt, **travailler localement**, **enregistrer** vos changements, **publier** vos mises à jour, puis **collaborer** via branches, PR et reviews.
-
----
-
 ## Règles d’or
 - Des **commits petits et cohérents** avec des messages **clairs** (voix impérative).  
 - Une **branche par objectif** (fonctionnalité/correction).  
@@ -33,7 +20,7 @@ Vous travaillez **seul** sur votre copie du projet (créée à partir du dépôt
 ### S01 — Récupération & installation personnelle
 **But :** démarrer sur de bonnes bases.  
 **Consignes :**
-1. Dupliquer le dépôt modèle (**template** ou **fork**) vers **votre compte**.  
+1. Dupliquer le dépôt modèle (**template** ou **fork**) vers **votre compte** github.  
 2. **Récupérer** le projet en local.  
 3. Ajouter dans `README.md` une courte présentation personnelle (prénom, objectif du site).  
 4. Préparer `journal-apprentissage.md` et noter ce que vous avez fait/observé.
